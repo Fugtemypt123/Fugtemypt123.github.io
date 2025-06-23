@@ -39,6 +39,90 @@
               </td>
             </tr>
           </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <h2>Research</h2>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr onmouseout="cmmp_stop()" onmouseover="cmmp_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='cmmp_image'><video width=100% height=56.25% muted autoplay loop>
+                <source src="images/cmmp.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/cmmp.png' width=100% height=56.25% >
+              </div>
+              <script type="text/javascript">
+                function cmmp_start() {
+                  document.getElementById('cmmp_image').style.opacity = "1";
+                }
+      
+                function cmmp_stop() {
+                  document.getElementById('cmmp_image').style.opacity = "0";
+                }
+                cmmp_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <span class="papertitle">Exploring Conditional Multi-Modal Prompts for Zero-shot HOI Detection
+              </span>
+              <br>
+              Ting Lei,
+              <strong>Shaofeng Yin</strong>,
+              Yuxin Peng,
+              Yang Liu,
+              <br>
+              <em>ECCV</em>, 2024
+              <br>
+              <a href="https://sites.google.com/view/eccv24-cmmp/%E9%A6%96%E9%A1%B5">project page</a> /
+              <a href="https://arxiv.org/abs/2408.02484">arXiv</a>
+              <p> In this paper, we introduce a novel framework for zero-shot HOI detection using Conditional Multi-Modal Prompts, namely CMMP. This approach enhances the generalization of large foundation models, such as CLIP, when fine-tuned for HOI detection. Unlike traditional prompt-learning methods, we propose learning decoupled vision and language prompts for interactiveness-aware visual feature extraction and generalizable interaction classification, respectively.
+              </p>
+            </td>
+          </tr>
+
+          <tr onmouseout="cmdse_stop()" onmouseover="cmdse_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='cmdse_image'><video width=100% height=56.25% muted autoplay loop>
+                <source src="images/cmdse.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/cmdse.png' width=100% height=56.25% >
+              </div>
+              <script type="text/javascript">
+                function cmdse_start() {
+                  document.getElementById('cmdse_image').style.opacity = "1";
+                }
+      
+                function cmdse_stop() {
+                  document.getElementById('cmdse_image').style.opacity = "0";
+                }
+                cmdse_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <span class="papertitle">Exploring the Potential of Large Foundation Models for Open-Vocabulary HOI Detection
+              </span>
+              <br>
+              Ting Lei,
+              <strong>Shaofeng Yin</strong>,
+              Yang Liu,
+              <br>
+              <em>CVPR</em>, 2024
+              <br>
+              <a href="https://sites.google.com/view/cmd-se/">project page</a> /
+              <a href="https://arxiv.org/abs/2404.06194">arXiv</a>
+              <p> In this paper, we introduce a novel end-to-end open vocabulary HOI detection framework with conditional multi-level decoding and fine-grained semantic enhancement (CMD-SE), harnessing the potential of Visual-Language Models (VLMs).
+              </p>
+            </td>
+          </tr>
           
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
             <tr>
