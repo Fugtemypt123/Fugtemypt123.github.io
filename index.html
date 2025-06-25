@@ -49,6 +49,43 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <tr onmouseout="toolvqa_stop()" onmouseover="toolvqa_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='toolvqa_image'><video width=100% muted autoplay loop>
+                <!-- <source src="images/cmmp.mp4" type="video/mp4"> -->
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/toolvqa.png' width=100%>
+              </div>
+              <script type="text/javascript">
+                function toolvqa_start() {
+                  document.getElementById('toolvqa_image').style.opacity = "1";
+                }
+      
+                function toolvqa_stop() {
+                  document.getElementById('toolvqa_image').style.opacity = "0";
+                }
+                toolvqa_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <span class="papertitle">ToolVQA: A Dataset for Multi-step Reasoning VQA with External Tools
+              </span>
+              <br>
+              <strong>Shaofeng Yin</strong>,
+              Ting Lei,
+              Yang Liu
+              <br>
+              <em>ICCV</em>, 2025
+              <br>
+              project page (coming soon!) /
+              arXiv (coming soon!)
+              <p> Recent benchmarks reveal significant gaps in real-world tool-use proficiency, particularly in functionally diverse multimodal settings requiring multi-step reasoning. To bridge this gap, we propose ToolEngine, a novel data generation pipeline that employs Depth-First Search (DFS) with a dynamic in-context example matching mechanism to simulate human-like tool-use reasoning.
+              </p>
+            </td>
+          </tr>
+
           <tr onmouseout="cmmp_stop()" onmouseover="cmmp_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
