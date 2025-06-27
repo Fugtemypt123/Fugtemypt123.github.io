@@ -287,7 +287,9 @@
           \(q(x_{t-1}|x_t, x_0)\) 和前向过程是反着的，我们并不知道它的分布是什么，需要用贝叶斯公式算一下</p>
 
         <p style="text-align: center;">
+          \[
           \begin{aligned}q\left(\boldsymbol{x}_{t-1}|\boldsymbol{x}_{t},\boldsymbol{x}_{0}\right)& =\frac{q\left(\boldsymbol{x}_t|\boldsymbol{x}_{t-1},\boldsymbol{x}_0\right)q\left(\boldsymbol{x}_{t-1}|\boldsymbol{x}_0\right)}{q\left(\boldsymbol{x}_t|\boldsymbol{x}_0\right)}  \\&=\frac{q\left(\boldsymbol{x}_t|\boldsymbol{x}_{t-1}\right)q\left(\boldsymbol{x}_{t-1}|\boldsymbol{x}_0\right)}{q\left(\boldsymbol{x}_t|\boldsymbol{x}_0\right)} \\&=\frac{\mathcal{N}\left(\boldsymbol{x}_t;\sqrt{\alpha_t}\boldsymbol{x}_{t-1},\left(1-\alpha_t\right)\mathbf{I}\right)\mathcal{N}\left(\boldsymbol{x}_{t-1};\sqrt{\bar{\alpha}_{t-1}}\boldsymbol{x}_0,\left(1-\bar{\alpha}_{t-1}\right)\mathbf{I}\right)}{\mathcal{N}\left(\boldsymbol{x}_t;\sqrt{\bar{\alpha}_t}\boldsymbol{x}_0,\left(1-\bar{\alpha}_t\right)\mathbf{I}\right)}\\ &\propto\mathcal{N}\left(\boldsymbol{x}_{t-1};\frac{\sqrt{\alpha_t}\left(1-\bar{\alpha}_{t-1}\right)\boldsymbol{x}_t+\sqrt{\bar{\alpha}_{t-1}}\left(1-\alpha_t\right)\boldsymbol{x}_0}{1-\bar{\alpha}_t},\frac{\left(1-\alpha_t\right)\left(1-\bar{\alpha}_{t-1}\right)}{1-\bar{\alpha}_t}\mathbf{I}\right)\\&=\mathcal{N}\left(\boldsymbol{x}_{t-1};\boldsymbol{\mu}_q(\boldsymbol{x}_t,\boldsymbol{x}_0),\boldsymbol{\Sigma}_q(t)\right)\end{aligned}\tag{16}
+          \]
         </p>
 
         <p>现在我们再把前面建模好的\(p_{\theta}(x_{t-1}|x_t) = \mathcal{N}(x_{t-1};\mu_{\theta}(x_t, t), \Sigma_{\theta}(x_t, t))\)带进去，前面的【注】提到我们希望估计的是均值，而方差并不携带信息，所以我们不妨就把 
